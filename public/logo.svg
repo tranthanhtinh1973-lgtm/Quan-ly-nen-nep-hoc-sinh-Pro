@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <!-- Dark Navy Shield Gradient -->
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e2340"/>
+      <stop offset="50%" stop-color="#142f54"/>
+      <stop offset="100%" stop-color="#0a192f"/>
+    </linearGradient>
+    
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce085"/>
+      <stop offset="30%" stop-color="#dfb14b"/>
+      <stop offset="70%" stop-color="#c6952d"/>
+      <stop offset="100%" stop-color="#f5d77f"/>
+    </linearGradient>
+
+    <!-- Torch Flame Gradient -->
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#e65100"/>
+      <stop offset="50%" stop-color="#f57c00"/>
+      <stop offset="85%" stop-color="#ffb74d"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Shield Contour (Gold Border) -->
+  <path d="M 200 15 L 365 70 C 365 280 290 420 200 480 C 110 420 35 280 35 70 Z" 
+        fill="url(#goldGrad)" filter="url(#dropShadow)"/>
+
+  <!-- Inner Shield Body (Navy Blue) -->
+  <path d="M 200 30 L 350 80 C 350 270 280 405 200 460 C 120 405 50 270 50 80 Z" 
+        fill="url(#shieldBg)"/>
+
+  <!-- Inner Gold Border Outline -->
+  <path d="M 200 42 L 338 88 C 338 262 272 390 200 442 C 128 390 62 262 62 88 Z" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 1. FLAMING TORCH & LIGHT RAYS -->
+  <g id="torch" transform="translate(0, 5)">
+    <!-- Rays -->
+    <g stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round">
+      <line x1="200" y1="65" x2="200" y2="52" />
+      <line x1="175" y1="72" x2="165" y2="62" />
+      <line x1="225" y1="72" x2="235" y2="62" />
+      <line x1="158" y1="92" x2="145" y2="88" />
+      <line x1="242" y1="92" x2="255" y2="88" />
+    </g>
+
+    <!-- Outer Flame -->
+    <path d="M 200 65 C 185 85 188 105 200 120 C 212 105 215 85 200 65 Z" fill="url(#flameGrad)"/>
+    <!-- Inner Flame Core -->
+    <path d="M 200 78 C 193 90 195 102 200 112 C 205 102 207 90 200 78 Z" fill="#fff59d"/>
+
+    <!-- Torch Handle / Holder -->
+    <path d="M 190 120 L 210 120 L 204 150 L 196 150 Z" fill="url(#goldGrad)"/>
+    <path d="M 185 120 L 215 120 L 210 126 L 190 126 Z" fill="url(#goldGrad)"/>
+    <line x1="200" y1="150" x2="200" y2="215" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 2. OPEN BOOK -->
+  <g id="openBook" transform="translate(0, 10)">
+    <!-- Book Pages Outline -->
+    <path d="M 120 185 Q 200 165 200 190 Q 200 165 280 185 L 280 250 Q 200 230 200 252 Q 200 230 120 250 Z" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linejoin="round"/>
+    
+    <!-- Spine line -->
+    <line x1="200" y1="190" x2="200" y2="252" stroke="url(#goldGrad)" stroke-width="4"/>
+
+    <!-- Left Page Layers -->
+    <path d="M 128 198 Q 195 180 195 202 L 195 244 Q 130 228 128 242 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <path d="M 136 208 Q 192 192 192 210 L 192 238 Q 138 224 136 236 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+
+    <!-- Right Page Layers -->
+    <path d="M 272 198 Q 205 180 205 202 L 205 244 Q 270 228 272 242 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <path d="M 264 208 Q 208 192 208 210 L 208 238 Q 262 224 264 236 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+  </g>
+
+  <!-- 3. SCALES OF JUSTICE -->
+  <g id="scales" transform="translate(0, 10)">
+    <!-- Top Tip / Finial -->
+    <path d="M 200 262 L 205 272 L 195 272 Z" fill="url(#goldGrad)"/>
+    
+    <!-- Center Post -->
+    <line x1="200" y1="272" x2="200" y2="385" stroke="url(#goldGrad)" stroke-width="5"/>
+    
+    <!-- Crossbar -->
+    <path d="M 130 295 C 160 288 240 288 270 295" fill="none" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="292" r="6" fill="url(#goldGrad)"/>
+
+    <!-- Left Scale Pan & Strings -->
+    <g transform="translate(0,0)">
+      <line x1="130" y1="295" x2="110" y2="355" stroke="url(#goldGrad)" stroke-width="2"/>
+      <line x1="130" y1="295" x2="150" y2="355" stroke="url(#goldGrad)" stroke-width="2"/>
+      <!-- Pan Bowl -->
+      <path d="M 105 355 C 105 372 155 372 155 355 Z" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    </g>
+
+    <!-- Right Scale Pan & Strings -->
+    <g transform="translate(0,0)">
+      <line x1="270" y1="295" x2="250" y2="355" stroke="url(#goldGrad)" stroke-width="2"/>
+      <line x1="270" y1="295" x2="290" y2="355" stroke="url(#goldGrad)" stroke-width="2"/>
+      <!-- Pan Bowl -->
+      <path d="M 245 355 C 245 372 295 372 295 355 Z" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    </g>
+
+    <!-- Base Stand -->
+    <path d="M 160 385 L 240 385 L 230 395 L 170 395 Z" fill="url(#goldGrad)"/>
+    <line x1="150" y1="395" x2="250" y2="395" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

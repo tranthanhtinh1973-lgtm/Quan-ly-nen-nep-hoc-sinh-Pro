@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Hệ thống Đánh giá Rèn luyện Học sinh (Thông tư 22)",
+  "short_name": "QL Rèn Luyện",
+  "description": "Ứng dụng chấm điểm rèn luyện, chuyên cần, quản lý kỷ luật và tự động đánh giá xếp loại học sinh theo chuẩn Thông tư 22 Bộ GD&ĐT.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Hệ thống Đánh giá Rèn luyện Học sinh (Thông tư 22)",
+  "description": "Ứng dụng chấm điểm rèn luyện, chuyên cần, quản lý kỷ luật và tự động đánh giá xếp loại học sinh theo chuẩn Thông tư 22 Bộ GD&ĐT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
